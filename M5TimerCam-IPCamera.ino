@@ -44,7 +44,7 @@ void setup() {
     config.xclk_freq_hz = 20000000;
     config.pixel_format = PIXFORMAT_JPEG;
     config.frame_size   = FRAMESIZE_UXGA;
-    config.jpeg_quality = 20;
+    config.jpeg_quality = 4;
     config.fb_count     = 2;
 
     // camera init

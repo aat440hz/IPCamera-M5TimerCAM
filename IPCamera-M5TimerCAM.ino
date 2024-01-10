@@ -57,7 +57,7 @@ void setup() {
     sensor_t *s = esp_camera_sensor_get();
     // initial sensors are flipped vertically and colors are a bit saturated
     s->set_vflip(s, 1);        // flip it back
-    s->set_brightness(s, 1);   // up the blightness just a bit
+    s->set_brightness(s, 1);   // up the brightness just a bit
     s->set_saturation(s, -2);  // lower the saturation
 
     // drop down frame size for higher initial frame rate

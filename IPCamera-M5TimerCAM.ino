@@ -7,8 +7,8 @@
 
 #include "camera_pins.h"
 
-const char *ssid     = "SETUP-8CD3";
-const char *password = "career6174brace";
+const char *ssid     = "Your SSID";
+const char *password = "Your Password";
 
 void startCameraServer();
 

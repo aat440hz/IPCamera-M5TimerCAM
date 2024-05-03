@@ -88,6 +88,18 @@ void setup() {
 }
 
 void loop() {
+    // Check WiFi connection and reconnect if necessary
+    if (WiFi.status() != WL_CONNECTED) {
+        Serial.println("WiFi connection lost. Reconnecting...");
+        WiFi.begin(ssid, password);
+        while (WiFi.status() != WL_CONNECTED) {
+            delay(500);
+            Serial.print(".");
+        }
+        Serial.println("");
+        Serial.println("WiFi reconnected.");
+    }
+
     // put your main code here, to run repeatedly:
     delay(100);
     digitalWrite(2, HIGH);
